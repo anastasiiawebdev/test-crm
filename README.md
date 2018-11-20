@@ -1,4 +1,1 @@
-1. npm i 
-
-2. gulp 
-
+https://anastasiiawebdev.github.io/Crm/build/
