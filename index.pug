@@ -19,22 +19,21 @@ include modules/html-head
 							path(fill="#fff" d="M480.62,77.69h1.73c0,2,0,4,0,6h6l0,1.62h-6c.13,5.38-.27,10.79.19,16.16.92,2.62,4,1.88,6.09,1.63l.33,1.5c-2.82.72-7,1.12-8.16-2.36-1-5.56-.19-11.3-.44-16.94h-3.21c0-.36-.07-1.07-.1-1.43l3.36-.21C480.47,81.68,480.54,79.68,480.62,77.69Z")
 							path(fill="#fff" d="M443.9,85.29c3-2.85,8.5-3,11.29.32,2.17,2.38,2.14,5.79,2.22,8.82-5.13,0-10.27,0-15.4,0,.33,3.43,1.77,7.37,5.34,8.55,3.06,1.25,6.18-.23,9-1.28-.74,3.45-5.44,3.61-8.31,3.28C439.4,103.33,437.68,90.64,443.9,85.29ZM442,92.8c4.54,0,9.09,0,13.64,0-.16-3.12-1.07-7-4.62-7.79C446.13,83.59,442.52,88.46,442,92.8Z")
 							path(fill="#fff" d="M463.85,84.32c3.06-2.15,6.91-.87,10,.43-.12.49-.35,1.47-.46,2-2.45-1.5-5.65-2.77-8.35-1.12a3.32,3.32,0,0,0-.36,5.6c2.74,1.8,6.24,2.16,8.82,4.25,2.78,2.43,1.82,7.45-1.53,8.88-4,1.82-8.66.45-11.88-2.29l1.56-1c2.46,1.72,5.45,3.08,8.5,2.17,2.66-.48,4.16-4.37,2-6.24-2.59-2.51-6.61-2.51-9.32-4.87A5,5,0,0,1,463.85,84.32Z")
-				ul.menu#accordion(style="margin-bottom:-1px")
-					li
-						a(href="#!" data-toggler="toggle" data-toggler-target="#demo5a" data-toggler-collection="#accordion") Applications
-							ul.js-toggler.is-visible.accordion__content#demo5a
-								li
-									a.tab-link(href="#demo6a" data-toggler="tabs" data-toggler-collection="#tabs") Nice app 1
-								li
-									a.tab-link(href="#demo6f" data-toggler="tabs" data-toggler-collection="#tabs") Nice app 2
-					li
-						a.tab-link(href="#demo6b" data-toggler="tabs" data-toggler-collection="#tabs") Documentation
-					li
-						a.tab-link(href="#demo6c" data-toggler="tabs" data-toggler-collection="#tabs") Settings
-					li
-						a.tab-link(href="#demo6d" data-toggler="tabs" data-toggler-collection="#tabs") Support
-					li
-						a.tab-link(href="#demo6e" data-toggler="tabs" data-toggler-collection="#tabs") Log out
+				ul.menu#accordion
+					li.menu__item
+						div
+							a.menu__link.accordion(href="#!" data-toggler="toggle" data-toggler-target="#demo5a" data-toggler-collection="#accordion") Applications
+						div.js-toggler.is-visible.accordion__content#demo5a
+							a.menu__link.tab-link(href="#demo6a" data-toggler="tabs" data-toggler-collection="#tabs") Nice app 1
+							a.menu__link.tab-link(href="#demo6f" data-toggler="tabs" data-toggler-collection="#tabs") Nice app 2
+					li.menu__item
+						a.menu__link.tab-link(href="#demo6b" data-toggler="tabs" data-toggler-collection="#tabs") Documentation
+					li.menu__item
+						a.menu__link.tab-link(href="#demo6c" data-toggler="tabs" data-toggler-collection="#tabs") Settings
+					li.menu__item
+						a.menu__link.tab-link(href="#demo6d" data-toggler="tabs" data-toggler-collection="#tabs") Support
+					li.menu__item
+						a.menu__link.tab-link(href="#demo6e" data-toggler="tabs" data-toggler-collection="#tabs") Log out
 		.l-col-xl-10.l-col-lg-12.content-col
 			.content
 				section.content__item
@@ -44,7 +43,7 @@ include modules/html-head
 								i.icon-arrowleft.btn-icon
 								| Back
 						.content-header__item.content-header__item--title.js_title_wrap
-							h1 Administration
+							h1.content-header__title Administration
 				section.content__item
 					div#tabs.tabs
 						div.js-toggler.is-fade.is-visible#demo6a
@@ -52,232 +51,232 @@ include modules/html-head
 								.searchbar
 									.searchbar__item
 										div.input-wrap
-											input.search(placeholder="Search for something…")
+											input.input(placeholder="Search for something…")
 											i.icon-search.input-wrap__icon
 									.searchbar__item
 										span.registered-services
-											span 4
+											span.registered-services__quantity 4
 											| services enregistrés
 									.searchbar__item.searchbar__item--btn
 										a.btn-fill("href=#!") add
 								.table-wrap
 									table.table
 										tbody.list
-											tr
-												th Title
-												th Role
-												th Service
-												th Company
-												th Status
-												th Date
-												th Actions
-											tr
-												td
+											tr.table__row
+												th.table__cell Title
+												th.table__cell Role
+												th.table__cell Service
+												th.table__cell Company
+												th.table__cell Status
+												th.table__cell Date
+												th.table__cell Actions
+											tr.table__row
+												td.table__cell
 													span.js_title.table__title Title 1
-												td
+												td.table__cell
 													span.js_role.table__role SUPER_ADMIN
-												td
+												td.table__cell
 													span.js_service.table__service Production
-												td
+												td.table__cell
 													span.js_company.table__company Aboutgoods
-												td
+												td.table__cell
 													span.js_status.table__status.connected Connected
-												td
+												td.table__cell
 													span.js_date.table__date 19/12/2019
-												td
+												td.table__cell
 													span.icon-more.table__btn-more.js_more
 														svg.circle-chart(viewbox="0 0 33.83098862 33.83098862" width="30" height="30" xmlns="http://www.w3.org/2000/svg")
 															circle.circle-chart__circle(stroke-width="1" stroke-dasharray="100,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431")
-														span.table__btn-more-hidden
-															ul
-																li
-																	a("href=#!") delete
-																li
-																	a("href=#!") print
-																li
-																	a("href=#!") see details
+														span.table__hidden-list-wrap
+															ul.table__hidden-list
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") delete
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") print
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") see details
 													span.icon-edit.table__btn-edit
-											tr
-												td
+											tr.table__row
+												td.table__cell
 													span.js_title.table__title Title 2
-												td
+												td.table__cell
 													span.js_role.table__role ADMIN
-												td
+												td.table__cell
 													span.js_service.table__service Production
-												td
+												td.table__cell
 													span.js_company.table__company Aboutgoods
-												td
+												td.table__cell
 													span.js_status.table__status.connected Connected
-												td
+												td.table__cell
 													span.js_date.table__date 19/10/2015
-												td
+												td.table__cell
 													span.icon-more.table__btn-more.js_more
 														svg.circle-chart(viewbox="0 0 33.83098862 33.83098862" width="30" height="30" xmlns="http://www.w3.org/2000/svg")
 															circle.circle-chart__circle(stroke-width="1" stroke-dasharray="100,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431")
-														span.table__btn-more-hidden
-															ul
-																li
-																	a("href=#!") delete
-																li
-																	a("href=#!") print
-																li
-																	a("href=#!") see details
+														span.table__hidden-list-wrap
+															ul.table__hidden-list
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") delete
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") print
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") see details
 													span.icon-edit.table__btn-edit
-											tr
-												td
+											tr.table__row
+												td.table__cell
 													span.js_title.table__title Title 3
-												td
+												td.table__cell
 													span.js_role.table__role ADMIN
-												td
+												td.table__cell
 													span.js_service.table__service Production
-												td
+												td.table__cell
 													span.js_company.table__company Aboutgoods
-												td
+												td.table__cell
 													span.js_status.table__status.connected Connected
-												td
+												td.table__cell
 													span.js_date.table__date 19/10/2015
-												td
+												td.table__cell
 													span.icon-more.table__btn-more.js_more
 														svg.circle-chart(viewbox="0 0 33.83098862 33.83098862" width="30" height="30" xmlns="http://www.w3.org/2000/svg")
 															circle.circle-chart__circle(stroke-width="1" stroke-dasharray="100,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431")
-														span.table__btn-more-hidden
-															ul
-																li
-																	a("href=#!") delete
-																li
-																	a("href=#!") print
-																li
-																	a("href=#!") see details
+														span.table__hidden-list-wrap
+															ul.table__hidden-list
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") delete
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") print
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") see details
 													span.icon-edit.table__btn-edit
-											tr
-												td
+											tr.table__row
+												td.table__cell
 													span.js_title.table__title Title 4
-												td
+												td.table__cell
 													span.js_role.table__role SUPER_ADMIN
-												td
+												td.table__cell
 													span.js_service.table__service Production
-												td
+												td.table__cell
 													span.js_company.table__company Aboutgoods
-												td
+												td.table__cell
 													span.js_status.table__status.connected Connected
-												td
+												td.table__cell
 													span.js_date.table__date 19/12/2019
-												td
+												td.table__cell
 													span.icon-more.table__btn-more.js_more
 														svg.circle-chart(viewbox="0 0 33.83098862 33.83098862" width="30" height="30" xmlns="http://www.w3.org/2000/svg")
 															circle.circle-chart__circle(stroke-width="1" stroke-dasharray="100,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431")
-														span.table__btn-more-hidden
-															ul
-																li
-																	a("href=#!") delete
-																li
-																	a("href=#!") print
-																li
-																	a("href=#!") see details
+														span.table__hidden-list-wrap
+															ul.table__hidden-list
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") delete
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") print
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") see details
 													span.icon-edit.table__btn-edit
-											tr
-												td
+											tr.table__row
+												td.table__cell
 													span.js_title.table__title Title 5
-												td
+												td.table__cell
 													span.js_role.table__role ADMIN
-												td
+												td.table__cell
 													span.js_service.table__service Production
-												td
+												td.table__cell
 													span.js_company.table__company Aboutgoods
-												td
+												td.table__cell
 													span.js_status.table__status.connected Connected
-												td
+												td.table__cell
 													span.js_date.table__date 19/10/2015
-												td
+												td.table__cell
 													span.icon-more.table__btn-more.js_more
 														svg.circle-chart(viewbox="0 0 33.83098862 33.83098862" width="30" height="30" xmlns="http://www.w3.org/2000/svg")
 															circle.circle-chart__circle(stroke-width="1" stroke-dasharray="100,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431")
-														span.table__btn-more-hidden
-															ul
-																li
-																	a("href=#!") delete
-																li
-																	a("href=#!") print
-																li
-																	a("href=#!") see details
+														span.table__hidden-list-wrap
+															ul.table__hidden-list
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") delete
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") print
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") see details
 													span.icon-edit.table__btn-edit
-											tr
-												td
+											tr.table__row
+												td.table__cell
 													span.js_title.table__title Title 6
-												td
+												td.table__cell
 													span.js_role.table__role ADMIN
-												td
+												td.table__cell
 													span.js_service.table__service Production
-												td
+												td.table__cell
 													span.js_company.table__company Aboutgoods
-												td
+												td.table__cell
 													span.js_status.table__status.disconnected Disonnected
-												td
+												td.table__cell
 													span.js_date.table__date 19/10/2015
-												td
+												td.table__cell
 													span.icon-more.table__btn-more.js_more
 														svg.circle-chart(viewbox="0 0 33.83098862 33.83098862" width="30" height="30" xmlns="http://www.w3.org/2000/svg")
 															circle.circle-chart__circle(stroke-width="1" stroke-dasharray="100,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431")
-														span.table__btn-more-hidden
-															ul
-																li
-																	a("href=#!") delete
-																li
-																	a("href=#!") print
-																li
-																	a("href=#!") see details
+														span.table__hidden-list-wrap
+															ul.table__hidden-list
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") delete
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") print
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") see details
 													span.icon-edit.table__btn-edit
-											tr
-												td
+											tr.table__row
+												td.table__cell
 													span.js_title.table__title Title 7
-												td
+												td.table__cell
 													span.js_role.table__role SUPER_ADMIN
-												td
+												td.table__cell
 													span.js_service.table__service Production
-												td
+												td.table__cell
 													span.js_company.table__company Aboutgoods
-												td
+												td.table__cell
 													span.js_status.table__status.connected Connected
-												td
+												td.table__cell
 													span.js_date.table__date 19/12/2019
-												td
+												td.table__cell
 													span.icon-more.table__btn-more.js_more
 														svg.circle-chart(viewbox="0 0 33.83098862 33.83098862" width="30" height="30" xmlns="http://www.w3.org/2000/svg")
 															circle.circle-chart__circle(stroke-width="1" stroke-dasharray="100,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431")
-														span.table__btn-more-hidden
-															ul
-																li
-																	a("href=#!") delete
-																li
-																	a("href=#!") print
-																li
-																	a("href=#!") see details
+														span.table__hidden-list-wrap
+															ul.table__hidden-list
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") delete
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") print
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") see details
 													span.icon-edit.table__btn-edit
-											tr
-												td
+											tr.table__row
+												td.table__cell
 													span.js_title.table__title Title 8
-												td
+												td.table__cell
 													span.js_role.table__role ADMIN
-												td
+												td.table__cell
 													span.js_service.table__service Production
-												td
+												td.table__cell
 													span.js_company.table__company Aboutgoods
-												td
+												td.table__cell
 													span.js_status.table__status.disconnected Disonnected
-												td
+												td.table__cell
 													span.js_date.table__date 19/10/2015
-												td
+												td.table__cell
 													span.icon-more.table__btn-more.js_more
 														svg.circle-chart(viewbox="0 0 33.83098862 33.83098862" width="30" height="30" xmlns="http://www.w3.org/2000/svg")
 															circle.circle-chart__circle(stroke-width="1" stroke-dasharray="100,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431")
-														span.table__btn-more-hidden
-															ul
-																li
-																	a("href=#!") delete
-																li
-																	a("href=#!") print
-																li
-																	a("href=#!") see details
+														span.table__hidden-list-wrap
+															ul.table__hidden-list
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") delete
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") print
+																li.table__hidden-list-item
+																	a.table__hidden-list-link("href=#!") see details
 													span.icon-edit.table__btn-edit
 						div.js-toggler.is-fade#demo6b
 							div Documentation
@@ -288,7 +287,7 @@ include modules/html-head
 						div.js-toggler.is-fade#demo6e
 							div Log out
 						div.js-toggler.is-fade#demo6f
-							div Nice app 2
+							div demo6f
 
 
 include modules/html-footer
