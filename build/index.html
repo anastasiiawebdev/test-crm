@@ -30,16 +30,15 @@
               <path fill="#fff" d="M443.9,85.29c3-2.85,8.5-3,11.29.32,2.17,2.38,2.14,5.79,2.22,8.82-5.13,0-10.27,0-15.4,0,.33,3.43,1.77,7.37,5.34,8.55,3.06,1.25,6.18-.23,9-1.28-.74,3.45-5.44,3.61-8.31,3.28C439.4,103.33,437.68,90.64,443.9,85.29ZM442,92.8c4.54,0,9.09,0,13.64,0-.16-3.12-1.07-7-4.62-7.79C446.13,83.59,442.52,88.46,442,92.8Z"></path>
               <path fill="#fff" d="M463.85,84.32c3.06-2.15,6.91-.87,10,.43-.12.49-.35,1.47-.46,2-2.45-1.5-5.65-2.77-8.35-1.12a3.32,3.32,0,0,0-.36,5.6c2.74,1.8,6.24,2.16,8.82,4.25,2.78,2.43,1.82,7.45-1.53,8.88-4,1.82-8.66.45-11.88-2.29l1.56-1c2.46,1.72,5.45,3.08,8.5,2.17,2.66-.48,4.16-4.37,2-6.24-2.59-2.51-6.61-2.51-9.32-4.87A5,5,0,0,1,463.85,84.32Z"></path>
             </svg></a></div>
-        <ul class="menu" id="accordion" style="margin-bottom:-1px">
-          <li><a href="#!" data-toggler="toggle" data-toggler-target="#demo5a" data-toggler-collection="#accordion">Applications
-              <ul class="js-toggler is-visible accordion__content" id="demo5a">
-                <li><a class="tab-link" href="#demo6a" data-toggler="tabs" data-toggler-collection="#tabs">Nice app 1</a></li>
-                <li><a class="tab-link" href="#demo6f" data-toggler="tabs" data-toggler-collection="#tabs">Nice app 2</a></li>
-              </ul></a></li>
-          <li><a class="tab-link" href="#demo6b" data-toggler="tabs" data-toggler-collection="#tabs">Documentation</a></li>
-          <li><a class="tab-link" href="#demo6c" data-toggler="tabs" data-toggler-collection="#tabs">Settings</a></li>
-          <li><a class="tab-link" href="#demo6d" data-toggler="tabs" data-toggler-collection="#tabs">Support</a></li>
-          <li><a class="tab-link" href="#demo6e" data-toggler="tabs" data-toggler-collection="#tabs">Log out</a></li>
+        <ul class="menu" id="accordion">
+          <li class="menu__item">
+            <div><a class="menu__link accordion" href="#!" data-toggler="toggle" data-toggler-target="#demo5a" data-toggler-collection="#accordion">Applications</a></div>
+            <div class="js-toggler is-visible accordion__content" id="demo5a"><a class="menu__link tab-link" href="#demo6a" data-toggler="tabs" data-toggler-collection="#tabs">Nice app 1</a><a class="menu__link tab-link" href="#demo6f" data-toggler="tabs" data-toggler-collection="#tabs">Nice app 2</a></div>
+          </li>
+          <li class="menu__item"><a class="menu__link tab-link" href="#demo6b" data-toggler="tabs" data-toggler-collection="#tabs">Documentation</a></li>
+          <li class="menu__item"><a class="menu__link tab-link" href="#demo6c" data-toggler="tabs" data-toggler-collection="#tabs">Settings</a></li>
+          <li class="menu__item"><a class="menu__link tab-link" href="#demo6d" data-toggler="tabs" data-toggler-collection="#tabs">Support</a></li>
+          <li class="menu__item"><a class="menu__link tab-link" href="#demo6e" data-toggler="tabs" data-toggler-collection="#tabs">Log out</a></li>
         </ul>
       </aside>
     </div>
@@ -49,7 +48,7 @@
           <div class="content-header">
             <div class="content-header__item content-header__item--btn js_btn_wrap"><a class="btn-border content-header__btn" href=#!><i class="icon-arrowleft btn-icon"></i>Back</a></div>
             <div class="content-header__item content-header__item--title js_title_wrap">
-              <h1>Administration</h1>
+              <h1 class="content-header__title">Administration</h1>
             </div>
           </div>
         </section>
@@ -60,158 +59,158 @@
                 <div class="searchbar">
                   <div class="searchbar__item">
                     <div class="input-wrap">
-                      <input class="search" placeholder="Search for something…"><i class="icon-search input-wrap__icon"></i>
+                      <input class="input" placeholder="Search for something…"><i class="icon-search input-wrap__icon"></i>
                     </div>
                   </div>
-                  <div class="searchbar__item"><span class="registered-services"><span>4</span>services enregistrés</span></div>
+                  <div class="searchbar__item"><span class="registered-services"><span class="registered-services__quantity">4</span>services enregistrés</span></div>
                   <div class="searchbar__item searchbar__item--btn"><a class="btn-fill" href=#!>add</a></div>
                 </div>
                 <div class="table-wrap">
                   <table class="table">
                     <tbody class="list">
-                      <tr>
-                        <th>Title</th>
-                        <th>Role</th>
-                        <th>Service</th>
-                        <th>Company</th>
-                        <th>Status</th>
-                        <th>Date</th>
-                        <th>Actions</th>
+                      <tr class="table__row">
+                        <th class="table__cell">Title</th>
+                        <th class="table__cell">Role</th>
+                        <th class="table__cell">Service</th>
+                        <th class="table__cell">Company</th>
+                        <th class="table__cell">Status</th>
+                        <th class="table__cell">Date</th>
+                        <th class="table__cell">Actions</th>
                       </tr>
-                      <tr>
-                        <td><span class="js_title table__title">Title 1</span></td>
-                        <td><span class="js_role table__role">SUPER_ADMIN</span></td>
-                        <td><span class="js_service table__service">Production</span></td>
-                        <td><span class="js_company table__company">Aboutgoods</span></td>
-                        <td><span class="js_status table__status connected">Connected</span></td>
-                        <td><span class="js_date table__date">19/12/2019</span></td>
-                        <td><span class="icon-more table__btn-more js_more">
+                      <tr class="table__row">
+                        <td class="table__cell"><span class="js_title table__title">Title 1</span></td>
+                        <td class="table__cell"><span class="js_role table__role">SUPER_ADMIN</span></td>
+                        <td class="table__cell"><span class="js_service table__service">Production</span></td>
+                        <td class="table__cell"><span class="js_company table__company">Aboutgoods</span></td>
+                        <td class="table__cell"><span class="js_status table__status connected">Connected</span></td>
+                        <td class="table__cell"><span class="js_date table__date">19/12/2019</span></td>
+                        <td class="table__cell"><span class="icon-more table__btn-more js_more">
                             <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
                               <circle class="circle-chart__circle" stroke-width="1" stroke-dasharray="100,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
-                            </svg><span class="table__btn-more-hidden">
-                              <ul>
-                                <li><a href=#!>delete</a></li>
-                                <li><a href=#!>print</a></li>
-                                <li><a href=#!>see details</a></li>
+                            </svg><span class="table__hidden-list-wrap">
+                              <ul class="table__hidden-list">
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>delete</a></li>
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>print</a></li>
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>see details</a></li>
                               </ul></span></span><span class="icon-edit table__btn-edit"></span></td>
                       </tr>
-                      <tr>
-                        <td><span class="js_title table__title">Title 2</span></td>
-                        <td><span class="js_role table__role">ADMIN</span></td>
-                        <td><span class="js_service table__service">Production</span></td>
-                        <td><span class="js_company table__company">Aboutgoods</span></td>
-                        <td><span class="js_status table__status connected">Connected</span></td>
-                        <td><span class="js_date table__date">19/10/2015</span></td>
-                        <td><span class="icon-more table__btn-more js_more">
+                      <tr class="table__row">
+                        <td class="table__cell"><span class="js_title table__title">Title 2</span></td>
+                        <td class="table__cell"><span class="js_role table__role">ADMIN</span></td>
+                        <td class="table__cell"><span class="js_service table__service">Production</span></td>
+                        <td class="table__cell"><span class="js_company table__company">Aboutgoods</span></td>
+                        <td class="table__cell"><span class="js_status table__status connected">Connected</span></td>
+                        <td class="table__cell"><span class="js_date table__date">19/10/2015</span></td>
+                        <td class="table__cell"><span class="icon-more table__btn-more js_more">
                             <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
                               <circle class="circle-chart__circle" stroke-width="1" stroke-dasharray="100,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
-                            </svg><span class="table__btn-more-hidden">
-                              <ul>
-                                <li><a href=#!>delete</a></li>
-                                <li><a href=#!>print</a></li>
-                                <li><a href=#!>see details</a></li>
+                            </svg><span class="table__hidden-list-wrap">
+                              <ul class="table__hidden-list">
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>delete</a></li>
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>print</a></li>
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>see details</a></li>
                               </ul></span></span><span class="icon-edit table__btn-edit"></span></td>
                       </tr>
-                      <tr>
-                        <td><span class="js_title table__title">Title 3</span></td>
-                        <td><span class="js_role table__role">ADMIN</span></td>
-                        <td><span class="js_service table__service">Production</span></td>
-                        <td><span class="js_company table__company">Aboutgoods</span></td>
-                        <td><span class="js_status table__status connected">Connected</span></td>
-                        <td><span class="js_date table__date">19/10/2015</span></td>
-                        <td><span class="icon-more table__btn-more js_more">
+                      <tr class="table__row">
+                        <td class="table__cell"><span class="js_title table__title">Title 3</span></td>
+                        <td class="table__cell"><span class="js_role table__role">ADMIN</span></td>
+                        <td class="table__cell"><span class="js_service table__service">Production</span></td>
+                        <td class="table__cell"><span class="js_company table__company">Aboutgoods</span></td>
+                        <td class="table__cell"><span class="js_status table__status connected">Connected</span></td>
+                        <td class="table__cell"><span class="js_date table__date">19/10/2015</span></td>
+                        <td class="table__cell"><span class="icon-more table__btn-more js_more">
                             <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
                               <circle class="circle-chart__circle" stroke-width="1" stroke-dasharray="100,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
-                            </svg><span class="table__btn-more-hidden">
-                              <ul>
-                                <li><a href=#!>delete</a></li>
-                                <li><a href=#!>print</a></li>
-                                <li><a href=#!>see details</a></li>
+                            </svg><span class="table__hidden-list-wrap">
+                              <ul class="table__hidden-list">
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>delete</a></li>
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>print</a></li>
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>see details</a></li>
                               </ul></span></span><span class="icon-edit table__btn-edit"></span></td>
                       </tr>
-                      <tr>
-                        <td><span class="js_title table__title">Title 4</span></td>
-                        <td><span class="js_role table__role">SUPER_ADMIN</span></td>
-                        <td><span class="js_service table__service">Production</span></td>
-                        <td><span class="js_company table__company">Aboutgoods</span></td>
-                        <td><span class="js_status table__status connected">Connected</span></td>
-                        <td><span class="js_date table__date">19/12/2019</span></td>
-                        <td><span class="icon-more table__btn-more js_more">
+                      <tr class="table__row">
+                        <td class="table__cell"><span class="js_title table__title">Title 4</span></td>
+                        <td class="table__cell"><span class="js_role table__role">SUPER_ADMIN</span></td>
+                        <td class="table__cell"><span class="js_service table__service">Production</span></td>
+                        <td class="table__cell"><span class="js_company table__company">Aboutgoods</span></td>
+                        <td class="table__cell"><span class="js_status table__status connected">Connected</span></td>
+                        <td class="table__cell"><span class="js_date table__date">19/12/2019</span></td>
+                        <td class="table__cell"><span class="icon-more table__btn-more js_more">
                             <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
                               <circle class="circle-chart__circle" stroke-width="1" stroke-dasharray="100,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
-                            </svg><span class="table__btn-more-hidden">
-                              <ul>
-                                <li><a href=#!>delete</a></li>
-                                <li><a href=#!>print</a></li>
-                                <li><a href=#!>see details</a></li>
+                            </svg><span class="table__hidden-list-wrap">
+                              <ul class="table__hidden-list">
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>delete</a></li>
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>print</a></li>
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>see details</a></li>
                               </ul></span></span><span class="icon-edit table__btn-edit"></span></td>
                       </tr>
-                      <tr>
-                        <td><span class="js_title table__title">Title 5</span></td>
-                        <td><span class="js_role table__role">ADMIN</span></td>
-                        <td><span class="js_service table__service">Production</span></td>
-                        <td><span class="js_company table__company">Aboutgoods</span></td>
-                        <td><span class="js_status table__status connected">Connected</span></td>
-                        <td><span class="js_date table__date">19/10/2015</span></td>
-                        <td><span class="icon-more table__btn-more js_more">
+                      <tr class="table__row">
+                        <td class="table__cell"><span class="js_title table__title">Title 5</span></td>
+                        <td class="table__cell"><span class="js_role table__role">ADMIN</span></td>
+                        <td class="table__cell"><span class="js_service table__service">Production</span></td>
+                        <td class="table__cell"><span class="js_company table__company">Aboutgoods</span></td>
+                        <td class="table__cell"><span class="js_status table__status connected">Connected</span></td>
+                        <td class="table__cell"><span class="js_date table__date">19/10/2015</span></td>
+                        <td class="table__cell"><span class="icon-more table__btn-more js_more">
                             <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
                               <circle class="circle-chart__circle" stroke-width="1" stroke-dasharray="100,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
-                            </svg><span class="table__btn-more-hidden">
-                              <ul>
-                                <li><a href=#!>delete</a></li>
-                                <li><a href=#!>print</a></li>
-                                <li><a href=#!>see details</a></li>
+                            </svg><span class="table__hidden-list-wrap">
+                              <ul class="table__hidden-list">
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>delete</a></li>
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>print</a></li>
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>see details</a></li>
                               </ul></span></span><span class="icon-edit table__btn-edit"></span></td>
                       </tr>
-                      <tr>
-                        <td><span class="js_title table__title">Title 6</span></td>
-                        <td><span class="js_role table__role">ADMIN</span></td>
-                        <td><span class="js_service table__service">Production</span></td>
-                        <td><span class="js_company table__company">Aboutgoods</span></td>
-                        <td><span class="js_status table__status disconnected">Disonnected</span></td>
-                        <td><span class="js_date table__date">19/10/2015</span></td>
-                        <td><span class="icon-more table__btn-more js_more">
+                      <tr class="table__row">
+                        <td class="table__cell"><span class="js_title table__title">Title 6</span></td>
+                        <td class="table__cell"><span class="js_role table__role">ADMIN</span></td>
+                        <td class="table__cell"><span class="js_service table__service">Production</span></td>
+                        <td class="table__cell"><span class="js_company table__company">Aboutgoods</span></td>
+                        <td class="table__cell"><span class="js_status table__status disconnected">Disonnected</span></td>
+                        <td class="table__cell"><span class="js_date table__date">19/10/2015</span></td>
+                        <td class="table__cell"><span class="icon-more table__btn-more js_more">
                             <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
                               <circle class="circle-chart__circle" stroke-width="1" stroke-dasharray="100,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
-                            </svg><span class="table__btn-more-hidden">
-                              <ul>
-                                <li><a href=#!>delete</a></li>
-                                <li><a href=#!>print</a></li>
-                                <li><a href=#!>see details</a></li>
+                            </svg><span class="table__hidden-list-wrap">
+                              <ul class="table__hidden-list">
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>delete</a></li>
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>print</a></li>
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>see details</a></li>
                               </ul></span></span><span class="icon-edit table__btn-edit"></span></td>
                       </tr>
-                      <tr>
-                        <td><span class="js_title table__title">Title 7</span></td>
-                        <td><span class="js_role table__role">SUPER_ADMIN</span></td>
-                        <td><span class="js_service table__service">Production</span></td>
-                        <td><span class="js_company table__company">Aboutgoods</span></td>
-                        <td><span class="js_status table__status connected">Connected</span></td>
-                        <td><span class="js_date table__date">19/12/2019</span></td>
-                        <td><span class="icon-more table__btn-more js_more">
+                      <tr class="table__row">
+                        <td class="table__cell"><span class="js_title table__title">Title 7</span></td>
+                        <td class="table__cell"><span class="js_role table__role">SUPER_ADMIN</span></td>
+                        <td class="table__cell"><span class="js_service table__service">Production</span></td>
+                        <td class="table__cell"><span class="js_company table__company">Aboutgoods</span></td>
+                        <td class="table__cell"><span class="js_status table__status connected">Connected</span></td>
+                        <td class="table__cell"><span class="js_date table__date">19/12/2019</span></td>
+                        <td class="table__cell"><span class="icon-more table__btn-more js_more">
                             <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
                               <circle class="circle-chart__circle" stroke-width="1" stroke-dasharray="100,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
-                            </svg><span class="table__btn-more-hidden">
-                              <ul>
-                                <li><a href=#!>delete</a></li>
-                                <li><a href=#!>print</a></li>
-                                <li><a href=#!>see details</a></li>
+                            </svg><span class="table__hidden-list-wrap">
+                              <ul class="table__hidden-list">
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>delete</a></li>
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>print</a></li>
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>see details</a></li>
                               </ul></span></span><span class="icon-edit table__btn-edit"></span></td>
                       </tr>
-                      <tr>
-                        <td><span class="js_title table__title">Title 8</span></td>
-                        <td><span class="js_role table__role">ADMIN</span></td>
-                        <td><span class="js_service table__service">Production</span></td>
-                        <td><span class="js_company table__company">Aboutgoods</span></td>
-                        <td><span class="js_status table__status disconnected">Disonnected</span></td>
-                        <td><span class="js_date table__date">19/10/2015</span></td>
-                        <td><span class="icon-more table__btn-more js_more">
+                      <tr class="table__row">
+                        <td class="table__cell"><span class="js_title table__title">Title 8</span></td>
+                        <td class="table__cell"><span class="js_role table__role">ADMIN</span></td>
+                        <td class="table__cell"><span class="js_service table__service">Production</span></td>
+                        <td class="table__cell"><span class="js_company table__company">Aboutgoods</span></td>
+                        <td class="table__cell"><span class="js_status table__status disconnected">Disonnected</span></td>
+                        <td class="table__cell"><span class="js_date table__date">19/10/2015</span></td>
+                        <td class="table__cell"><span class="icon-more table__btn-more js_more">
                             <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
                               <circle class="circle-chart__circle" stroke-width="1" stroke-dasharray="100,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
-                            </svg><span class="table__btn-more-hidden">
-                              <ul>
-                                <li><a href=#!>delete</a></li>
-                                <li><a href=#!>print</a></li>
-                                <li><a href=#!>see details</a></li>
+                            </svg><span class="table__hidden-list-wrap">
+                              <ul class="table__hidden-list">
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>delete</a></li>
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>print</a></li>
+                                <li class="table__hidden-list-item"><a class="table__hidden-list-link" href=#!>see details</a></li>
                               </ul></span></span><span class="icon-edit table__btn-edit"></span></td>
                       </tr>
                     </tbody>
@@ -232,7 +231,7 @@
               <div>Log out</div>
             </div>
             <div class="js-toggler is-fade" id="demo6f">
-              <div>Nice app 2</div>
+              <div>demo6f</div>
             </div>
           </div>
         </section>
