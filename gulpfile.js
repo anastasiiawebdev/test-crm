@@ -81,8 +81,7 @@ gulp.task('images', function() {
 
 // Watch
 gulp.task('watch', function() {
- // gulp.watch(['assets/scss/*.scss'], ['sass']);
- gulp.watch(['assets/sass/*.sass'], ['sass']);
+ gulp.watch(['assets/sass/*.sass', 'assets/sass/**/*.sass'], ['sass']);
  gulp.watch(['assets/js/*.js'], ['scripts']);
  gulp.watch(['assets/img/icons/*.svg'], ['Iconfont']);
  gulp.watch(['*.pug'], ['pug']);
