@@ -1,1 +1,1 @@
-https://anastasiiawebdev.github.io/Crm/build/
+https://anastasiiawebdev.github.io/test-crm/
