@@ -1,0 +1,23 @@
+.searchbar
+	margin-bottom: 25px
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	&__item
+		padding-right: 20px
+		flex:
+			grow: 0
+			shrink: 0
+		&--btn
+			text-align: right
+			flex:
+				grow: 1
+		@include r(768)
+			flex-basis: 100%
+			max-width: 100%
+			text-align: left
+			margin-bottom: 15px
+		&:last-child
+			padding-right: 0
+			@include r(768)
+				margin-bottom: 0

@@ -1,0 +1,81 @@
+.menu
+	color: #fff
+	&>li
+		a
+			margin-bottom: 5px
+			font:
+				weight: bold
+		&>a
+			transition: background-color .3s
+			padding: 5px 15px
+			display: block
+			font:
+				size: 15px
+			opacity: .8
+			&.active
+				opacity: 1
+		&>ul
+			&>li
+				&>a
+					transition: background-color .3s
+					font:
+						size: 12px
+					&.active
+						background-color: #2438AB
+						box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.11)
+						&:hover
+							background-color: #2438AB
+					&.is-visible
+						li
+							a
+								opacity: 1
+				&:hover
+					&>a
+						background-color: rgba(36, 56, 171, 0.27)
+						border-radius: 6px
+				&:last-child
+					a
+						margin-bottom: 0
+		&:hover
+			&>a
+				background-color: rgba(36, 56, 171, 0.27)
+				border-radius: 6px
+	&-wrap
+		height: 100%
+		background-image: radial-gradient(circle at 0 0, #3c52c9, #6b7dea)
+		padding: 15px
+	@include r(1100)
+		width: 200px
+	&-mobile
+		&-checkbox
+			display: none
+			opacity: 0
+			position: absolute
+			top: 0
+			left: 0
+			@include r(1100)
+				display: block
+				&:checked
+					& ~ .menu-col
+						transform: translateX(0)
+					& ~ .content-col
+						transform: translateX(250px)
+		&-burger
+			display: none
+			height: 50px
+			padding: 0 25px
+			background-color: #fff
+			position: relative
+			left: 10px
+			margin: 25px 0
+			&::before
+				content: '\f197'
+				color: $blue
+				font: $font-material
+				font-size: 20px
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+			@include r(1100)
+				display: block
