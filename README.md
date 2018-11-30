@@ -2,16 +2,16 @@ Demo: https://anastasiiawebdev.github.io/test-crm/
 
 Technologies: 
 
-  NPM
+ * NPM
   
-  Gulp 
+ * Gulp 
   
-  Browserify
+ * Browserify
   
-  Pug
+ * Pug
   
-  SASS
+ * SASS
   
-  Autoprefixer
+ * Autoprefixer
   
-  Iconfont
+ * Iconfont
